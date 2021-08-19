@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <!-- hello -->
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +28,7 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="options">
                 <div class="searchSection">
                     <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                     <p>En plein centre ville ou en pleine nature</p>
@@ -39,10 +38,10 @@
                 </div>
                 <div class="filtersSection">
                     <a>Filtres</a>
-                    <div class="filter"><i class="fas fa-money-bill-wave"></i><a>Économique</a></div>
-                    <div class="filter"><i class="fas fa-child"></i><a>Familial</a></div>
-                    <div class="filter"><i class="fas fa-heart"></i><a>Romantique</a></div>
-                    <div class="filter"><i class="fas fa-dog"></i><a>Animaux autorisés</a></div>
+                    <div class="filter"><div class="filter-fav"><i class="fas fa-money-bill-wave"></i></div><a>Économique</a></div>
+                    <div class="filter"><div class="filter-fav"><i class="fas fa-child"></i></div><a>Familial</a></div>
+                    <div class="filter"><div class="filter-fav"><i class="fas fa-heart"></i></div><a>Romantique</a></div>
+                    <div class="filter"><div class="filter-fav"><i class="fas fa-dog"></i></div><a>Animaux autorisés</a></div>
                 </div>
                 <div class="indication">
                     <a id="iconIndication"><i class="fas fa-info"></i></a>
@@ -100,21 +99,39 @@
                     </div>
                     <div class="allCardsPopulaire">
                         <div class="horizontalCard">
-                            <img src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"><h4>Hôtel Le soleil du matin</h4><p>Nuit à partir de <b>128€</b></p>
-                            <div class="horizontalStars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i  class="fas fa-star"></i>
+                            <img src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div class="description">
+                                <div class="text">
+                                    <h4>Hôtel Le soleil du matin</h4>
+                                    <p>Nuit à partir de <b>128€</b></p>
+                                </div>
+                                <div class="horizontalStars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i  class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="horizontalCard">
-                            <img src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"><h4>Au coeur de l'eau Chambres d'hôtes</h4><p>Nuit à partir de <b>71€</b></p>
-                            <div class="horizontalStars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i id="emptyStar" class="fas fa-star"></i>
+                            <img src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                            <div class="description">
+                                <div class="text">
+                                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                                    <p>Nuit à partir de <b>71€</b></p>
+                                </div>
+                                <div class="horizontalStars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i id="emptyStar" class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="horizontalCard">
-                            <img src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"><h4>Hôtel Tout bleu et Blanc</h4><p>Nuit à partir de <b>68€</b></p>
-                            <div class="horizontalStars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i id="emptyStar" class="fas fa-star"></i>
+                            <img src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                            <div class="description">
+                                <div class="text">
+                                    <h4>Hôtel Tout bleu et Blanc</h4>
+                                    <p>Nuit à partir de <b>68€</b></p>
+                                </div>
+                                <div class="horizontalStars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i id="emptyStar" class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>

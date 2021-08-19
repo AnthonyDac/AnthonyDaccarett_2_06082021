@@ -1,9 +1,3 @@
-/* @font-face
-{
-    font-family: "Raleway";
-    src: url(./police/Raleway-VariableFont_wght.ttf);
-}
-*/ 
 html 
 {
   scroll-behavior: smooth;
@@ -88,6 +82,11 @@ header
     border-top: #0065FC 2px solid;
     color : #0065FC;
 }
+
+.options {
+    margin-bottom: 20px;
+}
+
 .searchSection
 {
     font-family: 'Raleway';
@@ -135,30 +134,33 @@ header
     justify-content: space-between;
     width: 810px;
 }
-.filtersSection a
-{
-    margin-top: 15px;
-    margin-right: 40px;
-}
+
 .filter
 {
     border: 3px solid #F2F2F2;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
 }
 .filter a
 {
-    padding: 25px 0;
+    
     margin-left: 10px;
     margin-right: 20px;
 }
-.filter i
+.filter .filter-fav
 {
-    padding: 15px;
+    width: 50px;
+    height: 50px;
+    
     border-radius: 50%;
     background-color: #DEEBFF;
     color: #0065FC;
-    margin-left: -5px;
+    margin: -3px;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .indication
 {
@@ -179,13 +181,14 @@ header
     flex-direction: row;
     width: 100%;
     margin: auto;
+    justify-content: space-between;
 }
 .hebergements
 {
     max-width: 60%;
     background-color: #F2F2F2;
     font-family: 'Raleway';
-    margin: 40px 40px 40px 0;
+    
     border-radius: 25px;
     padding: 0 20px;
 }
@@ -198,15 +201,13 @@ header
 .populaire
 {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     max-width: 30%;
     background-color: #F2F2F2;
     font-family: 'Raleway';
-    margin-top: 40px;
-    margin-bottom: 40px;
+   
     border-radius: 25px;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
 }
 .title
 {
@@ -231,7 +232,7 @@ header
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
-    margin-top: -25px;
+   
     width: 100%;
 }
 .allCardsPopulaire
@@ -239,18 +240,20 @@ header
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: -25px;
+    
     width: 100%;
+    flex-grow: 1;
 }
 .horizontalCard
 {
-    width: 90%;
+    width: 100%;
     background-color: white;
     border-radius: 25px;
+    border: 5px solid white;
     box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
-    padding: 5px;
-    margin: 25px;
+    overflow: hidden;
     max-height: 150px;
+    box-sizing: border-box;
     transition-duration: 0.5s;
 }
 .horizontalCard img
@@ -259,23 +262,31 @@ header
     height: 150px;
     float: left;
     object-fit: cover;
-    border-radius: 25px 0 0 25px;
+    
     transition-duration: 0.5s;
 }
+
+.horizontalCard .description {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 10px;
+}
+
 .horizontalCard h4
 {
-    margin-left: 100px;
-    margin-top: 10px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .horizontalCard p
 {
-    margin-left: 100px;
-    margin-top: -15px;
+    margin: 0;
 }
 .horizontalStars
 {
-    margin-top: 50px;
-    margin-left: 100px;
+   
     color: #0065FC;
 }
 .card
@@ -285,7 +296,7 @@ header
     border-radius: 25px;
     box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
     border: 5px solid white;
-    margin: 25px 10px;
+    margin-bottom: 25px;
     max-height: 230px;
     transition-duration: 0.5s;
     overflow: hidden;
