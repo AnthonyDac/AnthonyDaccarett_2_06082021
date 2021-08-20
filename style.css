@@ -84,7 +84,8 @@ header
 }
 
 .options {
-    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
 }
 
 .searchSection
@@ -132,6 +133,7 @@ header
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 810px;
 }
 
@@ -476,28 +478,23 @@ section.footer
         flex-wrap: wrap;
         height: auto;
     }
-    
     .topNav img
     {
         margin-left: 20px
     }
     .topNav div {
         width: 50%;
-        height: 50px;   
+        height: 55px;   
     }
-
     .topNav div:nth-child(2) {
         order: 3;
     }
-
     .topNav div:nth-child(3) {
         order: 4;
     }
-
     .topNav div:nth-child(4) {
         order: 2;
     }
-
     .topNav a  
     {
         width: 100%;
@@ -511,21 +508,43 @@ section.footer
         margin: 0;
         max-width: none;
     }
+    .searchSection
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .searchBar
+    {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .barSearchBar
+    {
+        width: 150px;
+    }
+    .buttonSearchBar
+    {
+        
+    }
     .filtersSection
     {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 95%;
-        margin-bottom: 20px;
+        justify-content: flex-start;
+        width: 90%;
+        margin: auto;
     }
     .filter
     {
-        margin-top: 5px;
+        margin: 5px auto;
+        width: auto;
     }
     .indication
     {
-        justify-content: center;
+        justify-content: flex-start;
+        width: 90%;
+        margin: 10px auto;
     }
     .container
     {
@@ -626,10 +645,10 @@ section.footer
     }
     .footerListe 
     {
-    width: 50%;
+        width: 90%;
     }
-    section.footer {
-        padding : 35px;
+    section.footer 
+    {
         flex-direction: column;
     }
 }
