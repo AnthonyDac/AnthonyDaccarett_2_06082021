@@ -485,11 +485,11 @@ section.footer
     }
     .topNav img
     {
-        margin-left: 20px
+        margin: 0 35px;
     }
     .topNav div {
         width: 50%;
-        height: 55px;   
+        height: 55px;
     }
     .topNav div:nth-child(2) {
         order: 3;
