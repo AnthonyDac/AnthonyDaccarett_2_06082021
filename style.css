@@ -116,6 +116,7 @@ header
     width: 220px;
     color: black;
     font-weight: bold;
+    margin: 0;
 }
 .buttonSearchBar
 {
@@ -124,6 +125,7 @@ header
     color: white;
     padding: 16px;
     border-radius: 0 10px 10px 0;
+    margin-left: -4px;
 }
 .buttonSearchBarIcon
 {
@@ -733,10 +735,12 @@ section.footer
     .buttonSearchBarIcon
     {
         display: initial;
+        margin: 0;
     }
     .buttonSearchBarText
     {
         display: none;
+        margin: 0;
     }
     .filtersSection
     {
