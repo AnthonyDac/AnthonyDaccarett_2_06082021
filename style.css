@@ -470,9 +470,7 @@ section.footer
 .galeryCard p
 {
     font-family: 'Raleway';
-    position: absolute;
-    top: 0%;
-    left: 5%;
+    margin: 0 0 0 10px;
 }
 .galeryCardMin img
 {
@@ -490,26 +488,13 @@ section.footer
 }
 .galeryLegend
 {
+    display: flex;
+    align-items: center;
     position: absolute;
     font-weight: bold;
-    padding-top: 20px;
-    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
     bottom: 0px;
     width: 100%;
-    height: 30px;
-    border-radius: 0 0 25px 25px;
-    background-color: white;
-}
-.galeryLegendSingle
-{
-    position: absolute;
-    font-weight: bold;
-    padding-top: 20px;
-    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
-    bottom: 0px;
-    width: 100%;
-    height: 30px;
-    border-radius: 0 0 25px 25px;
+    height: 50px;
     background-color: white;
 }
 
