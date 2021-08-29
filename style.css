@@ -828,26 +828,13 @@ section.footer
     }
     .galeryLegend
     {
+        display: flex;
+        align-items: center;
         position: absolute;
         font-weight: bold;
-        padding-top: 20px;
-        box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
-        top: 80%;
+        bottom: 0px;
         width: 100%;
-        height: 30px;
-        border-radius: 0 0 25px 25px;
-        background-color: white;
-    }
-    .galeryLegendSingle
-    {
-        position: absolute;
-        font-weight: bold;
-        padding-top: 20px;
-        box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
-        top: 80%;
-        width: 100%;
-        height: 30px;
-        border-radius: 0 0 25px 25px;
+        height: 50px;
         background-color: white;
     }
     footer 
